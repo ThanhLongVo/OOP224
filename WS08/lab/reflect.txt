@@ -1,0 +1,12 @@
+/***********************************************************************
+// OOP244 Workshop #8 Reflection
+// Name: THANH LONG VO
+// Email: tlvo2@myseneca.ca
+// ID: 171587223
+***********************************************************************/
+
+Before completing this workshop, I spent 2 hours reviewing the lecture and testing myself on my knowledge. Next, because I was still quite weak in the C++ language, I spent a lot of time writing code for classes such as Line, Shape and LblShape, to debugging and correcting small errors. Each step helped me better understand inheritance and polymorphism in programming.
+
+Through this, I feel like I've learned a little more about how to work with virtual classes and functions, as well as how to manage memory more effectively. I also learned that paying attention to small details like properly formatting output can have a big impact on the quality of the final product.
+
+Overall, this exercise was quite interesting and useful, helping me connect the theory I learned with actual coding. I hope I will be able to apply what I have learned to future assignments.
