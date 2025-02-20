@@ -1,7 +1,7 @@
 /***********************************************************************
-// Final project Milestone 2
-// Module: Menu and AidMan
-// File: main.cpp
+// Final project Milestone 51
+//
+// File: main51.cpp
 // Version 1.0
 // Author  Fardad Soleimanloo
 // Description
@@ -11,15 +11,33 @@
 // Name                 Date            Reason
 ***********************************************************************/
 #include <iostream>
-#include "Menu.h"
+#include <fstream>
 #include "AidMan.h"
 #include "Utils.h"
+using namespace sdds;
+using namespace std;
+
+void copyfile(const char* to, const char* from);
+void displayFile(const char* file);
+
 int main() {
-   std::cout << "Enter the following to test MS2:\n abc\n 0 \n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 0\n--------\n";
-   std::cout << "Testing Invalid Menu: " << sdds::Menu("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t").run() << std::endl;
-   std::cout << "-----------------------------------------" << std::endl;
-   sdds::ut.testMode();
-   sdds::AidMan(nullptr).run();
-   sdds::AidMan("fakeFileName.csv").run();
-   return 0;
+	copyfile("data.dat", "data51.dat");
+	ut.testMode();
+	AidMan().run();
+	displayFile("data.dat");
+	return 0;
+}
+
+void displayFile(const char* file) {
+	ifstream in(file);
+	char ch;
+	cout << "File: " << file << endl;
+	while (in.get(ch)) cout << ch;
+}
+
+void copyfile(const char* to, const char* from) {
+	std::ifstream in(from);
+	std::ofstream out(to);
+	char ch;
+	while (in.get(ch)) out.put(ch);
 }
