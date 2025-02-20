@@ -1,0 +1,18 @@
+//==============================================
+// Name:           Thanh Long Vo
+// Student Number: 171587223
+// Email:          tlvo2@myseneca.ca
+// Section:        ZDD
+// Workshop:       Workshop3_DIY
+//==============================================
+Completing the practice and reviewing the solutions and the relevant parts in the lecture helped me understand some important concepts in object-oriented programming (OOP).
+
+First of all, the practice emphasizes the concept of packaging, this is the basic principle of OOP. Encapsulation allows us to group data and functions on that data in a class, ensuring better organization and security. In the solutions, the train layer packs the properties and behaviors of the ship, ensuring that the data is processed and tested properly.
+
+Next, the practice has discussed the use of constructors and destructors. The function allows the initialization of the object, while the cancellation function ensures the release of resources is done properly when the object is out of the scope of use. The solutions in the implementation of these concepts in the Train class are created by creating the jaw to initialize the object and the cancellation function to release the granted memory.
+
+Third, solutions illustrate the concept of data testing. Test data to ensure that the object is always in a valid and consistent state. In the train layer, functions like Validtime and Validnoofpassengers are used to check the input data.
+
+Finally, the practice emphasizes the importance of organizing source codes and reuse. By dividing the code into header files, separate deployment files, and defining class members, the code becomes more modularized and easier to maintain.
+
+In total, the practice has provided a valuable reality experience in the application of OOP principles, improving the quality of the source code and improving the problem-solving skills in C ++.
