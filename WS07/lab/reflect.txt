@@ -1,0 +1,8 @@
+/***********************************************************************
+// OOP244 Workshop #7 Lab
+// Name: THANH LONG VO
+// Email: tlvo2@myseneca.ca
+// ID: 171587223
+***********************************************************************/
+
+In the process of participating in this seminar, I better understand the classes that make up a hierarchical structure and how to apply them in practice. In the process of making workshops, I also encountered many logical errors as well as Syntax. For example, I repeated 'Content' when running the program showing the unexpected result, it took a lot of time to edit. Besides, the logic is calculated for the volume as well as the number of cans in the 'pack' class. Although it consumed quite a lot of time, but after many reviews and editing I also had the desired output. Although it takes time, it helps me understand more about structure, Derived class and algorithm math.
