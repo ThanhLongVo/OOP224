@@ -1,0 +1,11 @@
+//==============================================
+// Name:           Thanh Long Vo
+// Student Number: 171587223
+// Email:          tlvo2@myseneca.ca
+// Section:        ZDD
+// Workshop:       Workshop2_DIY
+//==============================================
+
+
+
+I just finished the workshop and wanted to share a little about my self -study process. After completing each part of the workshop, I reread the relevant parts in the lecture and make sure I understand the concepts that this workshop mentioned. Although in the process of completing my workshop, I have a lot of errors and take a lot of time to overcome them. However, that helps me better understand the errors and problems, from which I can see my weakness to this lesson.
