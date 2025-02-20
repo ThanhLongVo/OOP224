@@ -1,0 +1,9 @@
+//==============================================
+// Name:           Thanh Long Vo
+// Student Number: 171587223
+// Email:          tlvo2@myseneca.ca
+// Section:        ZDD
+// Workshop:       Workshop5-DIY
+// Date:           14 Oct 2023
+//==============================================
+This workshop has helped me better understand the concepts and the process of creating operators in the programming language. From the instructions and requirements in the workshop, I have a better understanding of the binary member operators, type conversion operators, unary operators, helper operator betWeen a primitive type and a class. Of course, it is difficult to understand and apply it in reality, it is still quite difficult for me if there is no suggestion from the workshop. I still have to learn a lot to be able to apply as well as master the programming skills in practice.

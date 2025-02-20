@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="5243028132393540369">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cstring&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\6\OOP-Workshops-main (1)\OOP-Workshops-main\WS05\lab\Flight.cpp" line="23" column="0"/>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\6\OOP-Workshops-main (1)\OOP-Workshops-main\WS05\lab\Flight.h" line="24" column="0"/>
+        </error>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="emptyPlane" lineNumber="30"/>
+    <functiondecl functionName="display" lineNumber="49"/>
+    <functioncall functionName="Flight"/>
+    <functioncall functionName="cout"/>
+    <functioncall functionName="emptyPlane"/>
+    <functioncall functionName="fixed"/>
+    <functioncall functionName="min"/>
+    <functioncall functionName="operatorbool"/>
+    <functioncall functionName="operatorconstchar*"/>
+    <functioncall functionName="operatordouble"/>
+    <functioncall functionName="operatorint"/>
+    <functioncall functionName="precision"/>
+    <functioncall functionName="right"/>
+    <functioncall functionName="setf"/>
+    <functioncall functionName="strcpy"/>
+    <functioncall functionName="unsetf"/>
+    <functioncall functionName="width"/>
+  </FileInfo>
+</analyzerinfo>

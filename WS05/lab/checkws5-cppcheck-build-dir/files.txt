@@ -1,0 +1,8 @@
+Flight.a1:Debug|Win32:D:/Seneca/Seneca/2nd semester/OOP - Introduction to Object Oriented Programming/6/OOP-Workshops-main (1)/OOP-Workshops-main/WS05/lab/Flight.cpp
+Flight.a2:Release|Win32:D:/Seneca/Seneca/2nd semester/OOP - Introduction to Object Oriented Programming/6/OOP-Workshops-main (1)/OOP-Workshops-main/WS05/lab/Flight.cpp
+Flight.a3:Debug|x64:D:/Seneca/Seneca/2nd semester/OOP - Introduction to Object Oriented Programming/6/OOP-Workshops-main (1)/OOP-Workshops-main/WS05/lab/Flight.cpp
+Flight.a4:Release|x64:D:/Seneca/Seneca/2nd semester/OOP - Introduction to Object Oriented Programming/6/OOP-Workshops-main (1)/OOP-Workshops-main/WS05/lab/Flight.cpp
+main.a1:Debug|Win32:D:/Seneca/Seneca/2nd semester/OOP - Introduction to Object Oriented Programming/6/OOP-Workshops-main (1)/OOP-Workshops-main/WS05/lab/main.cpp
+main.a2:Release|Win32:D:/Seneca/Seneca/2nd semester/OOP - Introduction to Object Oriented Programming/6/OOP-Workshops-main (1)/OOP-Workshops-main/WS05/lab/main.cpp
+main.a3:Debug|x64:D:/Seneca/Seneca/2nd semester/OOP - Introduction to Object Oriented Programming/6/OOP-Workshops-main (1)/OOP-Workshops-main/WS05/lab/main.cpp
+main.a4:Release|x64:D:/Seneca/Seneca/2nd semester/OOP - Introduction to Object Oriented Programming/6/OOP-Workshops-main (1)/OOP-Workshops-main/WS05/lab/main.cpp

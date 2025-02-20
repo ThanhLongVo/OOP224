@@ -1,0 +1,19 @@
+emptyPlane call:[strcpy] noreturn:[strcpy]
+Flight call:[emptyPlane] noreturn:[emptyPlane]
+Flight call:[emptyPlane,strcpy] noreturn:[strcpy]
+display call:[double,int,precision,setf,unsetf,width]
+operatorbool
+operatorint
+operatordouble
+operatorconstchar*
+operator~
+operator= call:[strcpy] noreturn:[strcpy]
+operator=
+operator=
+operator+=
+operator+=
+operator-=
+operator-=
+operator+
+operator<< call:[min]
+operator>> call:[min]
