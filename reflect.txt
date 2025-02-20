@@ -1,0 +1,21 @@
+/* Citation and Sources...
+Final Project Milestone Reflection 
+Filename: reflect.txt
+Version 1.0
+Author   Thanh Long Vo
+Revision History
+-----------------------------------------------------------
+Date      	Reason
+2023/12/01  	Preliminary release
+
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code 
+that my professor provided to complete my workshops and assignments.
+-----------------------------------------------------------
+OR
+-----------------------------------------------------------
+Write exactly which part of the code is given to you as help and 
+who gave it to you, or from what source you acquired it.
+-----------------------------------------------------------*/
+
+My OOP244 course's Disaster and Emergency Aid Management project was labor-intensive and full of obstacles. It required me to cope with intricate formatting and logic processing as well as apply theoretical knowledge to real-world situations. I had to go back and review courses in order to fully comprehend and apply concepts like classes, inheritance, polymorphism, and state management. I also had to fully comprehend how to carry out functions in accordance with the project's specifications. The project's formatting and logical complexity exceeded my first expectations, particularly for ms51, where the program output or file result unless specific circumstances were met, appeared to be correct at first glance but was erroneous. Nevertheless, by investing time in the project, I was able to finish each phase and gain a better understanding of procedures and structures, even though this subject is not my strong suit. I learned from this experience that everything is doable with enough time and effort. Along with improving my programming abilities, this project taught me how to effectively manage my time and be resilient in the face of adversity. I think the knowledge and skills I gained from working on this project will be extremely useful for my future work as a programmer.
