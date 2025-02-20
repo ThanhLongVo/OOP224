@@ -1,0 +1,5 @@
+﻿  CarInventory.cpp
+main.obj : error LNK2019: unresolved external symbol "bool __cdecl find_similar(class sdds::CarInventory * const,int)" (?find_similar@@YA_NQEAVCarInventory@sdds@@H@Z) referenced in function main
+    Hint on symbols that are defined and could potentially match:
+      "int __cdecl sdds::find_similar(class sdds::CarInventory * const,int)" (?find_similar@sdds@@YAHQEAVCarInventory@1@H@Z)
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\4\OOP-Workshops-main\OOP-Workshops-main\WS04\lab\x64\Debug\lab.exe : fatal error LNK1120: 1 unresolved externals
