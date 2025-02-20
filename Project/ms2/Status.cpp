@@ -1,96 +1,84 @@
+/* Citation and Sources...
+Final Project Milestone 2
+Module: Whatever
+Filename: Whatever.cpp
+Version 1.0
+Author	Thanh Long Vo
+Revision History
+-----------------------------------------------------------
+Date        Reason
+2023/11/09  Preliminary release
 
-#include <iostream>
-#include <cstring>
-#include "Status.h"
-#include "Utils.h"
-using namespace std;
-namespace sdds {
-   Status::Status(const char* c)
-   {
-      ut.alocpy(m_errDesc, c);
-      m_errCode = 0;
-   }
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my workshops and assignments.
+-----------------------------------------------------------
+OR
+-----------------------------------------------------------
+Write exactly which part of the code is given to you as help and
+who gave it to you, or from what source you acquired it.
+-----------------------------------------------------------*/
+#include"Status.h"
+#include <string.h>
+#include"Utils.h"
+#include<ostream>
 
-   Status::Status(const Status& s)
-   {
-      m_errCode = s.m_errCode;
-      if (s.m_errDesc != nullptr)
-      {
-         ut.alocpy(m_errDesc, s.m_errDesc);
-      }
-      else
-      {
-         m_errDesc = nullptr;
-      }
-   }
+namespace sdds
+{
+	Status::Status(const char* desc)
+	{
+		if (desc != nullptr)
+		{
+			ut.alocpy(Description, desc);
+		}
+		else
+			ut.alocpy(Description, "");
+		Codigo = 0;
+	}
 
-   Status& Status::operator=(const Status& s)
-   {
-      if (this != &s)
-      {
-         m_errCode = s.m_errCode;
-         if (s.m_errDesc != nullptr)
-         {
-            ut.alocpy(m_errDesc, s.m_errDesc);
-         }
-      }
-      return *this;
-   }
+	Status& Status::operator=(int num)
+	{
+		Codigo = num;
+		return *this;
+	}
+	Status& Status::operator=(const char* source)
+	{
+		ut.alocpy(Description, source);
+		return *this;
+	}
+	Status::operator int() const
+	{
+		return Codigo;
+	}
+	Status::operator const char* () const
+	{
+		return Description;
+	}
+	Status::operator bool() const
+	{
+		if (Description == nullptr)
+			return true;
+		else
+			return false;
+	}
+	Status& Status::clear()
+	{
+		delete[] Description;
+		Description = nullptr;
 
-   Status::~Status()
-   {
-      clear();
-   }
+		Codigo = 0;
 
-   Status& Status::operator=(int num)
-   {
-      m_errCode = num;
-      return *this;
-   }
+		return *this;
+	}
 
-   Status& Status::operator=(const char* str)
-   {
-      ut.alocpy(m_errDesc, str);
-      return *this;
-   }
+	std::ostream& operator<<(std::ostream& ostr, const Status& st)
+	{
+		if (int(st) != 0)
+			ostr << "ERR#" << st.Codigo << ": ";
 
-   Status::operator int()const
-   {
-      return m_errCode;
-   }
+		if (!st)
+			ostr << st.Description;
 
-   Status::operator const char* () const
-   {
-      return m_errDesc;
-   }
-
-   Status::operator bool() const
-   {
-      return m_errDesc == nullptr;
-   }
-
-   Status& Status::clear()
-   {
-      delete[] m_errDesc;
-      m_errDesc = nullptr;
-      m_errCode = 0;
-      return *this;
-   }
-
-   ostream& operator<<(ostream& ostr, const Status& s)
-   {
-      if (!s)
-      {
-         if (int(s) != 0)
-         {
-            ostr << "ERR#" << int(s) << ": " << (const char*)s;
-         }
-         else
-         {
-            ostr << (const char*)s;
-         }
-      }
-      return ostr;
-   }
-
+		return ostr;
+	}
 }

@@ -1,181 +1,225 @@
+/* Citation and Sources...
+Final Project Milestone 2
+Module: Whatever
+Filename: Whatever.cpp
+Version 1.0
+Author	Thanh Long Vo
+Revision History
+-----------------------------------------------------------
+Date        Reason
+2023/11/09  Preliminary release
 
-#include <iostream>
+-----------------------------------------------------------
+I have done all the coding by myself and only copied the code
+that my professor provided to complete my workshops and assignments.
+-----------------------------------------------------------
+OR
+-----------------------------------------------------------
+Write exactly which part of the code is given to you as help and
+who gave it to you, or from what source you acquired it.
+-----------------------------------------------------------*/
 #include "Date.h"
 #include "Utils.h"
+#include <iostream>
+#include<iomanip>
+#include <string>
 using namespace std;
+
 namespace sdds
 {
-   bool Date::validate()
-   {
-      bool result = false;
-      int year;
-      ut.getSystemDate(&year);
-      if (m_month < 1 || m_month > 12)
-      {
-         m_state = "Invalid month in date";
-         m_state = 2;
-      }
-      else if (m_year < year || m_year > m_maxyear)
-      {
-         m_state = "Invalid year in date";
-         m_state = 1;
-      }
+	bool Date::validate()
+	{
+		bool valid = true;
+		int currentYear;
+		ut.getSystemDate(&currentYear);
 
-      else if (m_day < 1 || m_day > ut.daysOfMon(m_month, m_year))
-      {
-         m_state = "Invalid day in date";
-         m_state = 3;
-      }
-      else
-      {
-         result = true;
-      }
-      return result;
-   }
-   int Date::uniqueDateVal()
-   {
-      return m_year * 372 + m_month * 31 + m_day;
-   }
-   Date::Date(const int year, const int month, const int date)
-   {
-      if (year == month && month == date)
-      {
-         ut.getSystemDate(&m_year, &m_month, &m_day);
-      }
-      else
-      {
-         m_year = year;
-         m_month = month;
-         m_day = date;
-      }
-      validate();
-   }
+		if (Year<currentYear || Year>MAXIMUM_YEAR_VALUE)
+		{
+			status = "Invalid year in date";
+			status = 1;
+			valid = false;
+			return valid;
+		}
+		if (Month < 1 || Month>12)
+		{
+			status = "Invalid month in date";
+			status = 2;
+			valid = false;
+			return valid;
+		}
+		if (Day<1 || Day>ut.daysOfMon(Month, Year))
+		{
+			status = "Invalid day in date";
+			status = 3;
+			valid = false;
+			return valid;
+		}
 
-   Date& Date::operator=(const Date& d)
-   {
-      if (this != &d)
-      {
-         m_year = d.m_year;
-         m_month = d.m_month;
-         m_day = d.m_day;
-         m_state = d.m_state;
-         m_format = d.m_format;
-      }
-      return *this;
-   }
+		if (valid)
+			status.clear();
 
-   bool Date::operator==(Date& d)
-   {
-      return uniqueDateVal() == d.uniqueDateVal();
-   }
+		return valid;
+	}
 
-   bool Date::operator!=(Date& d)
-   {
-      return uniqueDateVal() != d.uniqueDateVal();
-   }
+	int Date::unique_date_value()
+	{
+		return Year * 372 + Month * 31 + Day;
+	}
 
-   bool Date::operator<(Date& d)
-   {
-      return uniqueDateVal() < d.uniqueDateVal();
-   }
+	Date::Date()
+	{
+		ut.getSystemDate(&Year, &Month, &Day);
+		Format = true;
+	}
 
-   bool Date::operator>(Date& d)
-   {
-      return uniqueDateVal() > d.uniqueDateVal();
-   }
+	Date::Date(int year, int month, int day)
+	{
+		Year = year;
+		Month = month;
+		Day = day;
+		Format = true;
 
-   bool Date::operator<=(Date& d)
-   {
-      return uniqueDateVal() <= d.uniqueDateVal();
-   }
+		validate();
+	}
 
-   bool Date::operator>=(Date& d)
-   {
-      return uniqueDateVal() >= d.uniqueDateVal();
-   }
+	bool Date::operator==(Date& d)
+	{
+		if (unique_date_value() == d.unique_date_value())
+			return true;
+		else
+			return false;
+	}
 
-   const Status& Date::state() const
-   {
-      return m_state;
-   }
+	bool Date::operator!=(Date& d)
+	{
+		if (unique_date_value() != d.unique_date_value())
+			return true;
+		else
+			return false;
+	}
 
-   Date& Date::formatted(bool set)
-   {
-      m_format = set;
-      return *this;
-   }
+	bool Date::operator<(Date& d)
+	{
+		if (unique_date_value() < d.unique_date_value())
+			return true;
+		else
+			return false;
+	}
 
-   Date::operator bool()const
-   {
-      return state();
-   }
+	bool Date::operator>(Date& d)
+	{
+		if (unique_date_value() > d.unique_date_value())
+			return true;
+		else
+			return false;
+	}
 
-   ostream& Date::write(ostream& ostr) const
-   {
-      if (m_format)
-      {
-         ostr.width(2);
-         ostr << m_year << "/";
-         ostr.setf(ios::right);
-         ostr.width(2);
-         ostr.fill('0');
-         ostr << m_month << "/";
-         ostr.unsetf(ios::right);
-         ostr.width(2);
-         ostr << m_day;
-      }
-      else
-      {
-         ostr.width(2);
-         ostr << m_year % 100;
-         ostr.width(2);
-         ostr.fill('0');
-         ostr << m_month;
-         ostr.width(2);
-         ostr << m_day;
-      }
-      return ostr;
-   }
-   istream& Date::read(istream& istr)
-   {
-      int input;
-      istr.clear();
-      istr >> input;
-      if (istr)
-      {
-         if (input > 999 && input < 10000)
-         {
-            m_day = input % 100;
-            m_month = (input - input % 100) / 100;
-            ut.getSystemDate(&m_year);
-         }
-         else
-         {
-            m_day = input % 100;
-            m_month = int(input % 10000 / 100);
-            m_year = ((input - input % 10000) / 10000) + 2000;
-         }
-         if (!validate())
-         {
-            istr.setstate(ios::badbit);
-         }
-      }
-      else
-      {
-         m_state = "Invalid date value";
-      }
+	bool Date::operator<=(Date& d)
+	{
+		if (unique_date_value() <= d.unique_date_value())
+			return true;
+		else
+			return false;
+	}
 
-      return istr;
-   }
+	bool Date::operator>=(Date& d)
+	{
+		if (unique_date_value() >= d.unique_date_value())
+			return true;
+		else
+			return false;
+	}
 
-   ostream& operator<<(ostream& ostr, const Date& d)
-   {
-      return d.write(ostr);
-   }
 
-   istream& operator>>(istream& istr, Date& d)
-   {
-      return d.read(istr);
-   }
+	Status& Date::state()
+	{
+		return status;
+	}
 
+	Date& Date::formatted(bool flag)
+	{
+		Format = flag;
+		return *this;
+	}
+
+	Date::operator bool() const
+	{
+		if (status)
+			return true;
+		else
+			return false;
+	}
+
+	ostream& Date::write(ostream& ostr) const
+	{
+		if (Format == true)
+		{
+			ostr << Year << "/";
+			ostr << std::setfill('0') << std::setw(2) << Month << "/";
+			ostr << std::setfill('0') << std::setw(2) << Day;
+		}
+
+		else
+		{
+			ostr << Year % 100;
+			ostr << std::setfill('0') << std::setw(2) << Month;
+			ostr << std::setfill('0') << std::setw(2) << Day;
+		}
+
+
+		return ostr;
+	}
+
+	istream& Date::read(istream& istr)
+	{
+		int n;
+		istr >> n;
+
+		if (istr.fail())
+		{
+			status = "Invalid date value";
+			return istr;
+		}
+
+		if (to_string(n).length() == 4)
+		{
+			Month = n / 100;
+			Day = n % 100;
+			ut.getSystemDate(&Year);
+		}
+		else if (to_string(n).length() == 6)
+		{
+			string temp = "20" + to_string(n / 10000);
+			Year = atoi(&temp[0]);
+			Month = (n % 10000) / 100;
+			Day = n % 100;
+		}
+		else if (to_string(n).length() == 2)
+		{
+			status = "Invalid month in date";
+			status = 2;
+			istr.setstate(ios::badbit);
+			return istr;
+		}
+
+		if (!validate())
+			istr.setstate(ios::badbit);
+
+		return istr;
+	}
+
+	Date::~Date()
+	{
+		status.clear();
+	}
+
+	std::ostream& operator<<(std::ostream& ostr, const Date& d)
+	{
+		return d.write(ostr);
+	}
+
+	std::istream& operator>>(std::istream& istr, Date& d)
+	{
+		return d.read(istr);
+	}
 }
