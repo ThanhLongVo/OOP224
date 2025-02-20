@@ -1,0 +1,34 @@
+﻿  Date.cpp
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\Date.cpp(77,16): error C2440: 'return': cannot convert from 'const sdds::Status' to 'bool'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\Date.cpp(77,16): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  main.cpp
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(19,55): error C2440: '<function-style-cast>': cannot convert from 'const char [21]' to 'sdds::Menu'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(19,55): message : 'sdds::Menu::Menu': no overloaded function could convert all the argument types
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\Menu.h(12,2): message : could be 'sdds::Menu::Menu(sdds::Menu &&)'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(19,55): message : 'sdds::Menu::Menu(sdds::Menu &&)': cannot convert argument 1 from 'const char [21]' to 'sdds::Menu &&'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(19,56): message : Reason: cannot convert from 'const char [21]' to 'sdds::Menu'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\Menu.h(12,2): message : or       'sdds::Menu::Menu(const sdds::Menu &)'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(19,55): message : 'sdds::Menu::Menu(const sdds::Menu &)': cannot convert argument 1 from 'const char [21]' to 'const sdds::Menu &'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(19,56): message : Reason: cannot convert from 'const char [21]' to 'const sdds::Menu'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(19,55): message : while trying to match the argument list '(const char [21])'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(22,16): error C2440: '<function-style-cast>': cannot convert from 'nullptr' to 'sdds::AidMan'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(22,16): message : 'sdds::AidMan::AidMan': no overloaded function could convert all the argument types
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\AidMan.h(12,2): message : could be 'sdds::AidMan::AidMan(sdds::AidMan &&)'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(22,16): message : 'sdds::AidMan::AidMan(sdds::AidMan &&)': cannot convert argument 1 from 'nullptr' to 'sdds::AidMan &&'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(22,17): message : Reason: cannot convert from 'nullptr' to 'sdds::AidMan'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\AidMan.h(12,2): message : or       'sdds::AidMan::AidMan(const sdds::AidMan &)'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(22,16): message : 'sdds::AidMan::AidMan(const sdds::AidMan &)': cannot convert argument 1 from 'nullptr' to 'const sdds::AidMan &'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(22,17): message : Reason: cannot convert from 'nullptr' to 'const sdds::AidMan'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(22,16): message : while trying to match the argument list '(nullptr)'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(23,16): error C2440: '<function-style-cast>': cannot convert from 'const char [17]' to 'sdds::AidMan'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(23,16): message : 'sdds::AidMan::AidMan': no overloaded function could convert all the argument types
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\AidMan.h(12,2): message : could be 'sdds::AidMan::AidMan(sdds::AidMan &&)'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(23,16): message : 'sdds::AidMan::AidMan(sdds::AidMan &&)': cannot convert argument 1 from 'const char [17]' to 'sdds::AidMan &&'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(23,17): message : Reason: cannot convert from 'const char [17]' to 'sdds::AidMan'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\AidMan.h(12,2): message : or       'sdds::AidMan::AidMan(const sdds::AidMan &)'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(23,16): message : 'sdds::AidMan::AidMan(const sdds::AidMan &)': cannot convert argument 1 from 'const char [17]' to 'const sdds::AidMan &'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(23,17): message : Reason: cannot convert from 'const char [17]' to 'const sdds::AidMan'
+D:\Seneca\Seneca\2nd semester\OOP - Introduction to Object Oriented Programming\Project\OOP-Project-main\OOP-Project-main\ms2\main.cpp(23,16): message : while trying to match the argument list '(const char [17])'
+  Menu.cpp
+  Utils.cpp
+  Generating Code...
