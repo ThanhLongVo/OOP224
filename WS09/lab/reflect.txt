@@ -1,0 +1,14 @@
+//==============================================
+// Name:           Thanh Long Vo
+// Student Number: 171587223
+// Email:          tlvo2@myseneca.ca
+// Section:        ZDD
+// Workshop:       Workshop 9 - Reflection
+// Date:           22 Nov 2023
+//==============================================
+I genuinely believed that my object-oriented programming skills were still lacking before completing this task. I am still having trouble with the ideas and procedures of the inheritance class. Even yet, even if there is still work to be done, these exercises have helped me comprehend this subject far better.
+
+Using the inheritance layer, we established and oversaw the Graduate and Student classes in Workshop 9. For me, it is difficult to implement the functions, cancel, and assign. Nonetheless, I saw that I was becoming better during this process. I gained knowledge about using the classes' properties and methods as well as memory management.
+
+I gained a better knowledge of object-oriented programming from these exercises. I have come a long way and I plan to keep working harder even though I still have a long way to go.
+
