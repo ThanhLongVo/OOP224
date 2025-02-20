@@ -1,0 +1,28 @@
+
+/*
+Name: THANH LONG VO
+Student ID: 171587223
+Email: tlvo2@myseneca.ca
+Section: ZDD
+*/
+
+
+In this exercise, I learned about writing programs in the C++ programming language. Here are some important points I learned:
+
+Modularization: Divide the program into many small parts, each part has its own task. This helps make the source code easier to read, reuse, and maintain.
+
+Header Files: Header files help define the variables, constants, and functions that I use in the program. They also help other parts of the program communicate with each other.
+
+Source Files: I created source files to code each part of the program. Writing clean and well-structured code is important.
+
+Function Implementation: Implementing functions by converting algorithmic logic into source code is an important part. It's important to make sure the function is defined properly and is consistent with its declaration.
+
+File Handling: I learned how to read and write data from and to files using functions such as fopen, fclose, fscanf, and fprintf.
+
+String Manipulation: Use the cStrTools module to manipulate strings, such as removing spaces and converting strings to lowercase.
+
+Error Handling: Understand how to elegantly handle errors, such as file not found errors or unresolved link errors.
+
+Code Organization: Organize the source code properly, including the definition of constants, structures and functions in respective modules to ensure the source code is clean and easy to maintain.
+
+The big challenges in this exercise are resolving linking errors, ensuring correct function signatures, and ensuring all source code files are included in the project. In total, this exercise helped me understand how to write C++ programs in a well-structured and organized way.
